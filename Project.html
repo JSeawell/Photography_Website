@@ -1,0 +1,445 @@
+<!--
+
+Name: Jake Seawell
+Date: 2/11/19
+Description: This is the HTML file for a Travel/Photography
+website. This site is for the final project for CS 290.
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Travel & Photography</title>
+        
+        <link rel="stylesheet" href="ProjectStyle.css">
+	</head>
+	
+	<body>
+        
+        <div id="Menu Buttons">
+            <!-- Menu Buttons -->
+            <button class="tabLinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'IntTravel')">International Travel</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'believeVideo')">EuroTrip (2017)</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'Inspiration')">Inspiration</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'Destinations')">Destinations</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'Recommendations')">Recommendations</button>
+
+            <button class="tabLinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+        </div>
+        
+        
+        <!-- Home Page -->
+        <div id="Home" class="tabContent">
+        
+            <h1>Travel & Photography</h1>
+            <p>"Oh, The places you'll go!"</p><p class="tabOver">-Dr. Seuss</p>
+        
+            <!-- Photo Carousel -->
+            <!-- 
+
+            To create this carousel, I followed a video
+            tutorial series on Youtube by LoharTalk. That video
+            series can be found at: https://www.youtube.com/watch?v=aN7WnodpP4Q&t=4s 
+            
+            -->
+            <div class=photoCarousel>
+                <div class=slideContainer>
+                <div class=leftArrow onclick="nextSlide(-1)"><span class="arrow arrowLeft"></span></div>
+                <div class=rightArrow onclick="nextSlide(1)"><span class="arrow arrowRight"></span></div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/DJI_0004.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/DJI_0006.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/DJI_0017.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/DJI_0021.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/DJI_0028.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_1203.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_1588.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_1868.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_2047.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_2183.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_2722.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_2809.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_2833.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3025.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3076.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3133.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3182.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3304.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_3360.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_4599.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_4740.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_4787.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_5199.jpg" alt="Photo Load Error">
+                </div>
+                
+                <div class=imageHolder> 
+                    <img src="Resources/Photos/Home_Carousel/IMG_5462.jpg" alt="Photo Load Error">
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+
+        
+        <!-- Int Travel Page -->
+        <div id="IntTravel" class="tabContent" style="display:none">
+            
+            <h1>International Travel</h1>
+         
+            <!-- Photos -->
+            <div class = "photoContainer">
+                <a href="Austria.html">
+                <h4>Austria</h4>
+                    <img class="fit" src="Resources/Photos/Austria/IMG_2517.jpg" alt="Austrian Flowers">
+                    <img class="fit" src="Resources/Photos/Austria/IMG_5178.jpg" alt="Misted Mountains">
+                    <img class="fit" src="Resources/Photos/Austria/IMG_2479.jpg" alt="Austrian Alps">
+                    <img class="fit" src="Resources/Photos/Austria/IMG_2505.jpg" alt="Innsbruck">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">
+                <a href="Belfast.html">
+                <h4>Northern Ireland</h4>
+                    <img class="fit" src="Resources/Photos/Belfast/IMG_1891.jpg" alt="Belfast Coast">
+                    <img class="fit" src="Resources/Photos/Belfast/IMG_1671.jpg" alt="Cave Hill">
+                    <img class="fit" src="Resources/Photos/Belfast/IMG_1804.jpg" alt="Greenery">
+                    <img class="fit" src="Resources/Photos/Belfast/IMG_1836.jpg" alt="Giants Causeway">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Germany.html">
+                <h4>Germany</h4>
+                    <img class="fit" src="Resources/Photos/Germany/IMG_5073.jpg" alt="Berlin Wall">
+                    <img class="fit" src="Resources/Photos/Germany/DJI_0002.jpg" alt="NSA Tower">
+                    <img class="fit" src="Resources/Photos/Germany/IMG_2422.jpg" alt="Molecule Men">
+                    <img class="fit" src="Resources/Photos/Germany/IMG_5097.jpg" alt="The Arch">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">
+                <a href="Iceland.html">
+                <h4>Iceland</h4>
+                    <img class="fit" src="Resources/Photos/Iceland/DJI_0002.jpg" alt="Viking Ship">
+                    <img class="fit" src="Resources/Photos/Iceland/IMG_3227.jpg" alt="Ice Lagoon">
+                    <img class="fit" src="Resources/Photos/Iceland/IMG_3220.jpg" alt="The Badlands">
+                    <img class="fit" src="Resources/Photos/Iceland/DJI_0040_1.jpg" alt="Reykjavik">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">
+                <a href="Ireland.html">
+                <h4>Ireland</h4>
+                    <img class="fit" src="Resources/Photos/Ireland/DJI_0017.jpg" alt="Cliffs of Moher 1">
+                    <img class="fit" src="Resources/Photos/Ireland/IMG_1753.jpg" alt="Grasslands">
+                    <img class="fit" src="Resources/Photos/Ireland/DJI_0015.jpg" alt="Cliffs of Moher Top">
+                    <img class="fit" src="Resources/Photos/Ireland/DJI_0004 copy.jpg" alt="Cliffs of Moher 2">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Italy.html">
+                <h4>Italy</h4>
+                    <img class="fit" src="Resources/Photos/Italy/IMG_5444.jpg" alt="Colosseum">
+                    <img class="fit" src="Resources/Photos/Italy/IMG_5398.jpg" alt="Buildings">
+                    <img class="fit" src="Resources/Photos/Italy/DJI_0004 copy.jpg" alt="Eagle Eye">
+                    <img class="fit" src="Resources/Photos/Italy/IMG_5337.jpg" alt="Venician Boat">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="London.html">
+                <h4>England</h4>
+                    <img class="fit" src="Resources/Photos/London/IMG_2289.jpg" alt="Big Ben">
+                    <img class="fit" src="Resources/Photos/London/IMG_2286.jpg" alt="The Eye">
+                    <img class="fit" src="Resources/Photos/London/IMG_2256.jpg" alt="Lion">
+                    <img class="fit" src="Resources/Photos/London/IMG_4798.jpg" alt="Skyline">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Scotland.html">
+                <h4>Scotland</h4>
+                    <img class="fit" src="Resources/Photos/Scotland/IMG_4509.jpg" alt="Edinburgh">
+                    <img class="fit" src="Resources/Photos/Scotland/IMG_4586.jpg" alt="Highlands">
+                    <img class="fit" src="Resources/Photos/Scotland/IMG_2193.jpg" alt="Kelpies">
+                    <img class="fit" src="Resources/Photos/Scotland/IMG_1949.jpg" alt="The Castle">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Sweden.html">
+                <h4>Sweden</h4>
+                    <img class="fit" src="Resources/Photos/Sweden/IMG_1344.jpg" alt="Crown Over Water">
+                    <img class="fit" src="Resources/Photos/Sweden/IMG_1478.jpg" alt="Malaren">
+                    <img class="fit" src="Resources/Photos/Sweden/IMG_1238.jpg" alt="Fountain">
+                    <img class="fit" src="Resources/Photos/Sweden/DJI_1003.jpg" alt="Udevalla">
+                </a>
+            </div><hr>
+            
+            <div class = "photoContainer">    
+                <a href="Switzerland.html">
+                <h4>Switzerland</h4>
+                    <img class="fit" src="Resources/Photos/Switzerland/IMG_2976.jpg" alt="Tram Into Mountain">
+                    <img class="fit" src="Resources/Photos/Switzerland/IMG_2905.jpg" alt="Top of Europe">
+                    <img class="fit" src="Resources/Photos/Switzerland/IMG_2910.jpg" alt="The Rolling Hills">
+                    <img class="fit" src="Resources/Photos/Switzerland/IMG_5591.jpg" alt="Building Side">
+                </a>
+            </div><hr>
+            
+        </div>
+
+        <!-- EuroTrip Video Page -->
+        <div id="believeVideo" class="tabContent" style="display:none">
+            <h1>EuroTrip (2017)</h1>
+            
+            <video class="vid" width=100% height=100% controls>
+                <source src="Resources/Video/EuroTrip_2017_1.mp4" type="video/mp4">
+                Believe (2017) Video
+            </video>
+            
+        </div>
+        
+        
+        <!-- Instagram Inspiration Page -->
+        <div id="Inspiration" class="tabContent" style="display:none">
+        
+        <h1>Insta Inspiration</h1>
+        
+        <p><a href="https://www.instagram.com/zer0an0nymity/">My Instagram</a></p>
+            
+            <ul>Instagrammers I follow:<hr>
+                <a href="https://www.instagram.com/kaiyhun/"><li>kaiyhun - Kai Yhun Instagram</li></a><br>
+                <a href="https://www.instagram.com/northlandscapes/"><li>northLandscapes - Jan Erik Waider Instagram</li></a><br>
+                <a href="https://www.instagram.com/justinongley/"><li>justinongley - Justin Ongley Instagram</li></a><br>
+                <a href="https://www.instagram.com/karl_shakur/"><li>karl_shakur - Karl Shakur Instagram</li></a><br>
+                <a href="https://www.instagram.com/frederikschindler/"><li>frederikschindler - Frederik Schindler Instagram</li></a><br>
+                <a href="https://www.instagram.com/krasistm/"><li>krasistm - Krasi St M Instagram</li></a><br>
+                <a href="https://www.instagram.com/alexstrohl/"><li>alexstrohl - Alex Strohl Instagram</li></a><br>
+                <a href="https://www.instagram.com/petermckinnon/"><li>petermckinnon - Peter McKinnon Instagram</li></a><br>
+                <a href="https://www.instagram.com/simona_br_photography/"><li>simona_br_photography - S I M O N A Iceland Instagram</li></a><br>
+                <a href="https://www.instagram.com/ryandyar/"><li>ryandyar - Ryan Dyar Instagram</li></a><br>
+                <a href="https://www.instagram.com/malthezimakoff/"><li>malthezimakoff - Malthe Zimakoff Instagram</li></a><br>
+                <a href="https://www.instagram.com/nickpagephotography/"><li>nickpagephotography - Nick Page Instagram</li></a><br>
+                <a href="https://www.instagram.com/shainblumphotography/"><li>shainblumphotography - Shain Blum Instagram</li></a><br>
+                <a href="https://www.instagram.com/adamgibbsphoto/"><li>adamgibbsphoto - Adam Gibbs Instagram</li></a>
+            </ul>
+            
+        </div>
+        
+        
+        <!-- Destinations Page -->
+        <div id="Destinations" class="tabContent" style="display:none">
+        
+        <h1>Destinations</h1>
+            
+            <ul>Countries I've been:<hr>
+                <li>Belfast, Northern Ireland</li>
+                <li>Berlin, Munich Germany</li>
+                <li>Edinburgh Scotland</li>
+                <li>Iceland</li>
+                <li>Innsbruck Austria</li>
+                <li>Ireland</li>
+                <li>Lauterbrunnen Switzerland</li>
+                <li>London England</li>
+                <li>Oslo Norway</li>
+                <li>Stockholm, Uddevalla Sweden</li>
+                <li>Vancouver, BC</li>
+                <li>Venice, Rome, Florence Italy</li>
+                <li>Victoria, BC</li>
+            </ul><br>
+            
+            <ul>Things I've seen worth seeing:<hr>
+                <li>The Alps - Austria, Switzerland</li>
+                <li>Lost Lake Lava Tubes - Santiam, OR
+                    <a class = "dLoadButton" href="Resources/Lost_Lake_Lava_Map.png" download>Download Map</a></li>    
+                <li>Shipwreck of the Peter Iredale - Warrenton, OR</li>
+                <li>Skylight Cave - Sisters, OR</li>
+                <li>Thor's Well - Yachats, OR</li>
+                <li>Top of Europe - Lauterbrunnen Switzerland</li>
+            </ul><br>
+            
+            <ul>Countries I will go next:<hr>
+                <li>Alberta, Canada</li>
+                <li>Australia/New Zealand</li>
+                <li>Cape Town, South Africa</li>
+                <li>Egypt</li>
+                <li>Faroe Islands</li>
+                <li>Greece</li>
+                <li>Lofoten Norway</li>
+                <li>Patagonia</li>
+                <li>Singapore/Indonesia</li>
+            </ul><br>
+            
+            <ul>Things nearby I will see worth seeing:<hr>
+                <li>Alvord Desert</li>
+                <li>Crater Lake</li>
+                <li>Hell's Canyon</li>
+                <li>The Painted Hills</li>
+                <li>Pillars of Rome</li>
+                <li>Samuel H. Boardman State Scenic Corridor</li>
+                <li>Vance Creek Bridge</li>
+            </ul>
+    
+        </div>
+        
+        
+        <!-- Recommendations Page -->
+        <div id="Recommendations" class="tabContent" style="display:none">
+        
+        <h1>Recommendations</h1>
+            
+            <p>Please use this form to give me (and others) travel/destination/follow recommendations:</p>
+            
+            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            
+                Destination (what to see):<br>
+                <input type="text" name="destination" value=""><br><br>
+            
+                Location (where it is located):<br>
+                <input type="text" name="location" value=""><br><br>
+            
+                Instagram account to follow (or website to visit):<br>
+                <input type="text" name="toFollow" value=""><br><br>
+  
+                <input type="submit" value="Submit">
+            </form>
+    
+        </div>
+        
+        
+        <!-- About Me Page -->
+        <div id="AboutMe" class="tabContent" style="display:none">
+        
+        <h1>About Me</h1>
+        <img class="fitMed" src="Resources/Photos/About Me/Me.jpg" alt="Photo of Jake">
+        
+            <div class =scrollBox>
+    
+                <p> Hi! My Name is Jake Seawell. I was born in the PNW 27 years ago, 
+                and I've had an adventurous childhood.I grew up in Hillsboro,
+                graduated from Hilhi in 2009, and left for the University of
+                Colorado at Boulder to study Aerospace Engineering. I spent a
+                year and a half in Engineering and AFROTC before deciding I
+                wasn't enjoying my path. <br><br>
+
+                I transferred back home and enrolled at Oregon State University, 
+                where I earned a bachelor's of science in The Psychology of 
+                Creative Writing. I continued my education with a Master's of 
+                Arts in Teaching from Pacific University, and received 
+                endorsements in English Language Arts and Advanced Mathematics. 
+                I spent the next three years teaching and coaching at 
+                Union High School, in Vancouver/Camas, WA.<br><br>
+
+                Teaching was not for me, at least not yet,
+                so I decided to resign and pursue another degree. Which leads me
+                to my current pursuit. I am now enrolled online at Oregon State
+                studying Computer Science. My dream job would be to work in the 
+                field of Sports Analysis, but Aerospace Technology would also
+                be incredible. <br><br>
+
+                In my free time, I enjoy hiking to beautiful locations, 
+                drone/landscape photography, playing/watching/coaching/umpiring
+                sports, spending time with my family and friends, and playing with
+                my stubborn German Shepherd, Odin. He turns 1 soon :) <br><br>
+
+                I dream of a fullfilling job, a large and loving family of my
+                own, travel, adventure, and hoards of sports. My life has been 
+                quite an adventure, but hopefully an adventure that has only 
+                just begun.</p>
+            
+            </div><br>
+            
+            <img class="fitLarge" src="Resources/Photos/About Me/DJI_0006.jpg" alt="Hamilton Mountain">
+            <p>Hamilton Mountain Hike (Gorge), Washington State</p>
+    
+        </div>
+        
+        
+        <!-- Javascript Source -->
+        <script src="ProjectScript.js"></script>
+        
+        
+	</body>
+
+</html>
