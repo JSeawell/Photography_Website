@@ -1,5 +1,6 @@
 # Photography Website
-> CS-340 (Web Development) Project
+> CS-340 (Web Development) Project  
+
 A brief website to showcase some of my travels and landscape photography.  
   
 ## How to view:  
