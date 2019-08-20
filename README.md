@@ -6,7 +6,7 @@ A brief website to showcase some of my travels and landscape photography.
 ## How to view:  
 > Navigate [HERE](http://web.engr.oregonstate.edu/~seawellj/)
 
-## Concepts learned/used:
+## Tech or concepts learned/used:
 > 1. HTML  
 > 2. CSS
 > 3. JavaScript
