@@ -7,13 +7,13 @@ A brief website to showcase some of my travels and landscape photography.
 > Navigate [HERE](http://web.engr.oregonstate.edu/~seawellj/)
 
 ## Tech and/or concepts learned/used:
-> 1. HTML  
-> 2. CSS
-> 3. JavaScript
-> 4. DOM (Document Object Model)
-> 5. AJAX (Asynchronous JS and XML)
-> 6. Get and Post requests
-> 7. API
-> 8. Node
-> 9. Sessions
-> 10. Version control
+> - HTML  
+> - CSS
+> - JavaScript
+> - DOM (Document Object Model)
+> - AJAX (Asynchronous JS and XML)
+> - Get and Post requests
+> - API
+> - Node
+> - Sessions
+> - Version control
